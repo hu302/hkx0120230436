@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  // let i=0
+  let num=parseInt(prompt("请输入你要打印第几项："))
+  function functionName(num){
+    if(num<=1){
+      return num
+    }
+    return functionName(num-1)+functionName(num-2)
+  }
+
+  console.log(functionName(num))
+  document.write(functionName(num))
+
+</script>
+</body>
+</html>
