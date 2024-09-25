@@ -1,23 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
+＜！DOCTYPE html >
+<html 朗=" ' ">
 <head>
-    <meta charset="UTF-8">
+    <meta 字符集=“utf - 8”>
     <title>Title</title>
 </head>
 <body>
 <script>
-  // let i=0
-  let num=parseInt(prompt("请输入你要打印第几项："))
-  function functionName(num){
-    if(num<=1){
-      return num
+  
+  让 num=parseInt(提示("请输入你要打印第几项："))
+  函数 functionName(num){
+    如果(num>0 && num<=2){
+      返回 num-1
     }
-    return functionName(num-1)+functionName(num-2)
-  }
+    返回 functionName(num-1)+functionName(num-2)
 
-  console.log(functionName(num))
-  document.write(functionName(num))
+  }
+  为(让 i=1;i<=num;i++){
+      document.写(functionName(i)+“< br >”)
+  }
+  document.写(`第${num}项是:`+functionName(num))
 
 </script>
-</body>
+身体< / >
 </html>
